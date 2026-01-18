@@ -43,7 +43,7 @@ body{
     text-transform: capitalize;
     font-weight:500;
     color: #fff;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-transparent{
@@ -54,7 +54,7 @@ body{
     border-radius: 1000px;
     text-transform: capitalize;
     font-weight: 500;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -140,15 +140,67 @@ body{
     margin-bottom: 8px;
 }
 
-.hero-btn button{
+.hero-btn a{
+    display: inline-block;
     margin-right: 10px;
 }
 
 
 
+/* prodcust section  */
+
+.prodcust{
+    background: #1A0B2E;
+}
+
+.prodcust-section{
+    padding: 50px 0;
+}
+
+.section-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+
+.section-des p{
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+hr{
+    color: #fff;
+}
 
 
 
+
+.prodcust-details{
+    margin-top: 80px;
+}
+
+.prodcust-details .details{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+
+.detail-des h4{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: black;
+}
+
+.detail-des p{
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 20px;
+}
 
 
 
@@ -161,6 +213,11 @@ body{
     .main-menu,
     .top-btn{
         display: none;
+    }
+
+    .prodcust-details .details{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
 }
 
