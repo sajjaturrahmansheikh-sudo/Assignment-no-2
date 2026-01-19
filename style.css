@@ -58,6 +58,14 @@ body{
 }
 
 
+.big-layout{
+    grid-row: span 2;
+    align-content: center;
+}
+
+.medium-layout{
+    grid-column: span 2;
+}
 
 
 /* main css  */
@@ -119,7 +127,40 @@ body{
     background-position: center;
     padding: 70px 0 80px;
     margin-bottom: 40px;
+    position: relative;
 }
+
+.hero-microphone:before{
+    content: 'new';
+    position: absolute;
+    background: #00FF88;
+    padding: 8px 15px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    color: #1A0B2E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    top: 10px;
+    right: 150px;
+    animation-name: newbutton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes newbutton {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 
 .hero-microphone img{
@@ -128,7 +169,7 @@ body{
 
 
 .hero-t-des{
-    color: #fff;
+    color: #ffffff91;
     margin-bottom: 25px;
 }
 
@@ -167,7 +208,7 @@ body{
 
 
 .section-des p{
-    color: #fff;
+    color: #ffffff91;
     line-height: 40px;
     text-align: center;
     margin-bottom:50px;
@@ -197,10 +238,59 @@ hr{
 }
 
 .detail-des p{
-    color: #fff;
+    color: #ffffff91;
     text-transform: capitalize;
     line-height: 20px;
 }
+
+
+
+/* service section  */
+
+.service{
+    background: #230E3D;
+    padding: 120px 0;
+}
+
+.services{
+    margin-top: 40px;
+}
+
+
+.service-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+
+}
+
+.service-items .items{
+    padding: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.service-items .items img{
+    width: 60px;
+    height: auto;
+}
+
+.service-items .items h4{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.service-items .items p{
+    color: #ffffff91;
+    line-height: 24px;
+}
+
+
+
+
 
 
 
@@ -218,6 +308,18 @@ hr{
     .prodcust-details .details{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+    }
+
+    .hero-microphone:before{
+        right: 130px;
+    }
+    .service-items{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 30px;
+    }
+    .items{
+        grid-column: auto;
     }
 }
 
