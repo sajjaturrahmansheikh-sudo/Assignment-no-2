@@ -82,7 +82,8 @@ body{
     text-transform: capitalize;
 }
 
-.logo h3 span{
+.logo h3 span,
+.logo h2 span{
     background-image: linear-gradient(5deg,#F7E93F,#FB09B4,#9100F8);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -395,6 +396,57 @@ hr{
 
 
 
+/* footer section  */
+
+.footer{
+    background: url('./assets/footer-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 412px;
+    padding: 120px 0;
+    vertical-align: middle;
+}
+
+.footer-content{
+    justify-items: center;
+}
+
+.footer-logo h2{
+    font-size: 3.75rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #ffffff91;
+    text-transform: capitalize;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.footer-links a img{
+    width: 22px;
+}
+
+.footer-copyright p{
+    color: #ffffff91;
+
+}
+
+
+
+
+
 /* mobile devie  */
 
 @media screen and (max-width: 576px) {
@@ -433,6 +485,10 @@ hr{
     }
     .host-content{
         margin: 0 20px;
+    }
+
+    .footer-icons{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
