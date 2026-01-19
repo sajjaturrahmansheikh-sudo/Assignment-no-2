@@ -291,6 +291,107 @@ hr{
 
 
 
+/* feature  */
+
+.feature{
+    background: #1A0B2E;
+    padding: 120px 0;
+}
+
+
+.feature-content{
+    margin-top: 40px;
+}
+
+.feature-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.feature-items .feature-card{
+    background: #250D44;
+    border-radius: 40px;
+}
+
+.feature-items .feature-card iframe{
+    border: none;
+    border-radius: 40px 40px 0 0;
+}
+
+.feature-items .feature-card .card-content{
+    padding: 24px;
+
+}
+
+
+.feature-items .feature-card .card-content h4{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.feature-items .feature-card .card-content p{
+    color: #ffffff91;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.timer p{
+    color: #00FF88 !important;
+}
+
+
+
+/* host section  */
+
+.host{
+    background: #1A0B2E;
+    padding: 120px 0;
+}
+
+.host-content{
+    margin-top: 40px;
+}
+
+.host-item{
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    gap: 24px;
+    border-radius: 40px;
+}
+
+.host-image img{
+    max-width: 200px ;
+    height: auto;
+}
+
+.host-t-des h4{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.host-t-des p{
+    color: #ffffff91;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.host-icons{
+    gap: 20px;
+}
+
+.host-icon-img{
+    padding: 10px;
+    border: 1px solid #ffffff91;
+    border-radius: 50%;
+}
+
+.host-icons img{
+    max-width: 20px;
+    max-height: 20px;
+}
 
 
 
@@ -316,10 +417,22 @@ hr{
     .service-items{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1,1fr);
-        gap: 30px;
+        margin: 0 20px;
     }
     .items{
         grid-column: auto;
+    }
+    .feature-items{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 20px;
+    }
+    .host-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .host-content{
+        margin: 0 20px;
     }
 }
 
